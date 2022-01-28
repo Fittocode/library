@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "dotenv": "^14.3.2",
+    "express": "^4.17.2",
+    "hbs": "^4.2.0",
+    "mongoose": "^6.1.8",
+    "nodemon": "^2.0.15",
+    "scss": "^0.2.4"
+  },
+  "scripts": {
+    "start": "nodemon app.js"
+  }
+}
