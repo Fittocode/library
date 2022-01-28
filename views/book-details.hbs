@@ -4,23 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Books</title>
+    <title>Document</title>
 </head>
 <body>
- 
-{{!-- views/books-list.hbs --}}
-
-<h1>Books</h1>
+    <h1>{{book.title}}</h1>
 <hr>
-
-{{#each books}}
-  <div>
-      <h3>{{title}}</h3>
-      <p>By: {{author}}</p>
-      <a href="/books/{{_id}}">See details</a>
-  </div>
-  <hr>
-{{/each}}
-
+<p>Written by: {{book.author}}</p>
+<p>Summary: {{book.description}}</p>
+<p>Rating: {{book.rating}}/10</p>
+<hr>
+<a href="/books">Back</a>
 </body>
 </html>

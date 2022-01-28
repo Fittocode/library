@@ -23,4 +23,14 @@ router.get('/books', async (req, res) => {
   }
 });
 
+router.get('/books/:bookId', async (req, res) => {
+  const { bookId } = req.params;
+  const book = await Book.findById(bookId);
+  try {
+    res.render('book-details', { book: book });
+  } catch (err) {
+    console.log(err.message);
+  }
+});
+
 module.exports = router;
